@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @reservation.book.title %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @reservation.client.name %>
+</p>
+
+<p>
+  <strong>Librarian:</strong>
+  <%= @reservation.librarian.name %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @reservation.active %>
+</p>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>
